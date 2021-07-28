@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <title>Cargá tu película - Blockbuster</title>
+        <link rel="stylesheet" href="../assets/css/push-movie.css">
+    </head>
+
+    <body>
+        <header>
+            <img src="../assets/img/blockbuster_logo.svg" alt="Blockbuster Logo" class="logo">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./push-movie.html">Cargá tu película</a></li>
+                    <li><a href="./movie-database.html">Películas cargadas</a></li>
+                    <li><a href="./contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <label for="nav-toggle" class="nav-toggle-label">
+                <span></span>
+            </label>
+        </header>
+        <div class="content">
+            <form action="" id="movie__form">
+                <label for="movie__tittle">Ingrese el título de la película:</label>
+                <input type="text" name="" id="tittle" required><br><br>
+                <label for="movie__year">Ingrese el año de estreno:</label>
+                <input type="number" name="" id="year" required><br><br>
+                <label for="movie__genre">Ingrese el género:</label>
+                <input type="text" name="" id="genre" required><br><br>
+                <label for="movie__protagonist">Ingrese el nombre completo del protagonista:</label>
+                <input type="text" name="" id="protagonist" required><br><br>
+                <label for="movie__director">Ingrese el nombre completo del director:</label>
+                <input type="text" name="" id="director" required><br><br>
+                <label for="movie__synopsis">Ingrese la sinopsis (breve descripción):</label>
+                <input type="text" name="" id="synopsis" required><br><br>
+                <input type="submit" value="Enviar" id="submit">
+                <input type="reset" value="Limpiar">
+                <input onclick="" type="button" value="Borrar última película" id="delete__last">
+                <input onclick="" type="button" value="Borrar todas las películas" id="delete__all">
+            </form>
+            <div class="movie__cards">
+                <article class="card">
+                    <h4 class="card_tittle"></h4>
+                    <p class="card_data"></p>
+                </article>
+            </div>
+            <p id="movie">
+
+            </p>
+        </div>
+        <script src="../assets/js/classes/movieCreator.js"></script>
+        <script src="../assets/js/functions/createMovie.js"></script>
+        <script src="../assets/js/functions/showMovie.js"></script>
+        <script src="../assets/js/functions/deleteMovies.js"></script>
+        <script src="../assets/js/functions/buttons.js"></script>
+        <script src="../assets/js/script.js"></script>
+    </body>
+
+</html>
