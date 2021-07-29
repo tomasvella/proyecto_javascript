@@ -1,0 +1,101 @@
+[
+  {
+    "Title": "Mortal Kombat",
+    "Year": "2021",
+    "Genre": "Acción",
+    "Protagonist": "Lewis Tan",
+    "Director": "Simon McQuoid",
+    "Synopsis": "El luchador de MMA Cole Young busca a los mejores campeones de la Tierra para enfrentarse a los enemigos de Outworld en una batalla de alto riesgo por el universo.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BY2ZlNWIxODMtN2YwZi00ZjNmLWIyN2UtZTFkYmZkNDQyNTAyXkEyXkFqcGdeQXVyODkzNTgxMDg@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Hulk",
+    "Year": "2003",
+    "Genre": "Acción",
+    "Protagonist": "Eric Bana",
+    "Director": "Ang Lee",
+    "Synopsis": "Bruce Banner, un investigador de genética con un pasado trágico, sufre un accidente que hace que se transforme en un monstruo verde furioso cuando se enoja.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMzQwZDg1MGEtN2E5My00ZDJlLWI4MzItM2U2MjJhYzlkNmEzXkEyXkFqcGdeQXVyNDAxNjkxNjQ@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Star Wars",
+    "Year": "1977",
+    "Genre": "Action",
+    "Protagonist": "Mark Hamill",
+    "Director": "George Lucas",
+    "Synopsis": "Luke Skywalker une fuerzas con un Caballero Jedi, un piloto arrogante, un wookiee y dos droides para salvar la galaxia de la estación de batalla destructora del mundo del Imperio, mientras también intenta rescatar a la Princesa Leia del misterioso Darth Vader.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BNzVlY2MwMjktM2E4OS00Y2Y3LWE3ZjctYzhkZGM3YzA1ZWM2XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Saw",
+    "Year": "2004",
+    "Genre": "Horror",
+    "Protagonist": "Cary Elwes",
+    "Director": "James Wan",
+    "Synopsis": "Dos extraños se despiertan en una habitación sin recordar cómo llegaron allí, y pronto descubren que son peones en un juego mortal perpetrado por un notorio asesino en serie.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMzQ2ZTBhNmEtZDBmYi00ODU0LTgzZmQtNmMxM2M4NzM1ZjE4XkEyXkFqcGdeQXVyNjE5MjUyOTM@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Batman",
+    "Year": "1989",
+    "Genre": "Action",
+    "Protagonist": "Michael Keaton",
+    "Director": "Tim Burton",
+    "Synopsis": "El Caballero Oscuro de Gotham City comienza su guerra contra el crimen con su primer gran enemigo siendo Jack Napier, un criminal que se convierte en el payaso y homicida Joker.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTYwNjAyODIyMF5BMl5BanBnXkFtZTYwNDMwMDk2._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Iron Man",
+    "Year": "2008",
+    "Genre": "Action",
+    "Protagonist": "Robert Downey Jr.",
+    "Director": "Jon Favreau",
+    "Plot": "Después de estar cautivo en una cueva afgana, el ingeniero multimillonario Tony Stark crea una armadura única armada para luchar contra el mal.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Harry Potter and the Deathly Hallows: Part 2",
+    "Year": "2011",
+    "Genre": "Adventure",
+    "Protagonist": "Daniel Radcliffe",
+    "Director": "David Yates",
+    "Synopsis": "Harry, Ron y Hermione buscan los Horrocruxes restantes de Voldemort en su esfuerzo por destruir al Señor Oscuro mientras la batalla final continúa en Hogwarts.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMGVmMWNiMDktYjQ0Mi00MWIxLTk0N2UtN2ZlYTdkN2IzNDNlXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Kung Fu Panda",
+    "Year": "2008",
+    "Genre": "Animation",
+    "Protagonist": "Jack Black",
+    "Director": "Mark Osborne",
+    "Synopsis": "El Guerrero Dragón tiene que enfrentarse al salvaje Tai Lung mientras el destino de China está en juego. Sin embargo, el manto del Guerrero Dragón supuestamente se confunde al ser otorgado a un panda obeso que es un novato en las artes marciales.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BODJkZTZhMWItMDI3Yy00ZWZlLTk4NjQtOTI1ZjU5NjBjZTVjXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "The Simpsons Movie",
+    "Year": "2007",
+    "Genre": "Animation",
+    "Protagonist": "Dan Castellaneta",
+    "Director": "David Silverman",
+    "Synopsis": "Después de que Homero contamina el suministro de agua de la ciudad, Springfield es encerrada en una gigantesca cúpula por la EPA y los Simpson son declarados fugitivos.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMTgxMDczMTA5N15BMl5BanBnXkFtZTcwMzk1MzMzMw@@._V1_SX300.jpg"
+  },
+
+  {
+    "Title": "Scary Movie",
+    "Year": "2000",
+    "Genre": "Comedy",
+    "Protagonist": "Anna Faris",
+    "Director": "Keenen Ivory Wayans",
+    "Synopsis": "Un año después de deshacerse del cuerpo de un hombre al que mataron accidentalmente, un grupo de adolescentes tontos es acosado por un torpe asesino en serie.",
+    "Poster": "https://m.media-amazon.com/images/M/MV5BMGEzZjdjMGQtZmYzZC00N2I4LThiY2QtNWY5ZmQ3M2ExZmM4XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg"
+  }
+]

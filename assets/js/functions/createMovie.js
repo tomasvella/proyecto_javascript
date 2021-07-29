@@ -34,6 +34,8 @@ const createMovieRequest = () => {
 
     showMovie();
 
+    localStorage.setItem('moviedatabase', JSON.parse(movieDataBase));
+
     $('#movie__form')[0].reset();
   }
 };

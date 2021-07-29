@@ -141,16 +141,10 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms;
 }
 
-.content {
-  padding-top: 9em;
-  display: grid;
-  place-items: center;
-  color: var(--font-color);
-  font-size: 2em;
-  text-align: center;
-}
-
 @media screen and (min-width: 800px) {
+  body {
+    margin-bottom: 10%;
+  }
   .nav-toggle-label {
     display: none;
   }
@@ -211,9 +205,21 @@ nav a:hover {
     transform: scale(1, 1);
   }
 
-  .content {
-    height: 100vh;
-    font-size: 3em;
-    transform: translateY(-30%);
+  .card {
+    color: var(--font-color);
+    transform: translateY(35%);
+    background-color: transparent;
+    border-color: var(--font-color);
+  }
+
+  .card-title {
+    font-size: 2.5em;
+  }
+
+  .img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
   }
 }

@@ -216,4 +216,14 @@ nav a:hover {
     font-size: 3em;
     transform: translateY(-30%);
   }
+
+  .emoji {
+    transform: scale(1);
+    transition: transform ease-in-out 1s;
+  }
+
+  .emoji:hover {
+    transform: scale(1.4);
+    transition: transform ease-in-out 1s;
+  }
 }
