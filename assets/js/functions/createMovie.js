@@ -10,11 +10,11 @@ const createMovieRequest = () => {
   let synopsis = movieSynopsis.value;
 
   if (
-    tittle == '' &&
-    year == '' &&
-    genre == '' &&
-    protagonist == '' &&
-    director == '' &&
+    movieTittle == '' ||
+    year == '' ||
+    genre == '' ||
+    protagonist == '' ||
+    director === '' ||
     synopsis == ''
   ) {
     $('#movie__form').submit(function (event) {
@@ -31,10 +31,9 @@ const createMovieRequest = () => {
     );
 
     movieDataBase.push(createMovie);
+    localStorage.setItem('Movie', JSON.stringify(movieDataBase));
 
-    showMovie();
-
-    localStorage.setItem('moviedatabase', JSON.parse(movieDataBase));
+    showMovie(movieDataBase);
 
     $('#movie__form')[0].reset();
   }

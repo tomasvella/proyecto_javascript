@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.6.0.js"
             integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
         <title>Cargá tu película - Blockbuster</title>
@@ -41,26 +43,39 @@
                 <input type="text" name="" id="director" required><br><br>
                 <label for="movie__synopsis">Ingrese la sinopsis (breve descripción):</label>
                 <input type="text" name="" id="synopsis" required><br><br>
-                <input type="submit" value="Enviar" id="submit">
-                <input type="reset" value="Limpiar">
-                <input onclick="" type="button" value="Borrar última película" id="delete__last">
-                <input onclick="" type="button" value="Borrar todas las películas" id="delete__all">
+                <input type="submit" value="Enviar" id="submit" class="btn">
+                <input type="reset" value="Limpiar" class="btn">
+                <input type="button" value="Borrar última película" id="delete__last" class="btn" class="hidden">
+                <input type="button" value="Borrar todas las películas" id="delete__all" class="btn" class="hidden">
             </form>
-            <div class="movie__cards">
-                <article class="card">
-                    <h4 class="card_tittle"></h4>
-                    <p class="card_data"></p>
-                </article>
-            </div>
             <p id="movie">
 
             </p>
+        </div>
+        <div id="modal__lastMovie" class="modal__lastMovie">
+            <div class="modal__content">
+                <div class="modal__text__btn">
+                    <p>¿Seguro que quiere borrar la última película cargada?</p>
+                    <input type="button" value="Si" class="modal__lastMovie__btn" id="modal__last__YES">
+                    <input type="button" value="No" class="modal__lastMovie__btn" id="modal__last__NO">
+                </div>
+            </div>
+        </div>
+        <div id="modal__allMovies" class="modal__allMovies">
+            <div class="modal__content">
+                <div class="modal__text__btn">
+                    <p>¿Seguro que quiere borrar todas las películas cargadas?</p>
+                    <input type="button" value="Si" class="modal__allMovies__btn" id="modal__all__YES">
+                    <input type="button" value="No" class="modal__allMovies__btn" id="modal__all__NO">
+                </div>
+            </div>
         </div>
         <script src="../js/classes/movieCreator.js"></script>
         <script src="../js/functions/createMovie.js"></script>
         <script src="../js/functions/showMovie.js"></script>
         <script src="../js/functions/deleteMovies.js"></script>
         <script src="../js/functions/buttons.js"></script>
+        <script src="../js/functions/onRefreshMovies.js"></script>
         <script src="../js/script.js"></script>
     </body>
 

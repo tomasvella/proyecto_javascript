@@ -1,23 +1,19 @@
-@import url(//db.onlinewebfonts.com/c/69bed3a8aa634e734859ad564c6fd73c?family=ITC+Machine);
+@font-face {
+  font-family: 'Itc Machine';
+  src: url('../fonts/ITC\ Machine/f5150c90308b4f19f093944346a2670a.woff2')
+      format('woff2'),
+    url('../fonts/ITC\ Machine/f5150c90308b4f19f093944346a2670a.ttf')
+      format('ttf'),
+    url('../fonts/ITC\ Machine/f5150c90308b4f19f093944346a2670a.eot')
+      format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --background-header-color: hsl(221, 89%, 22%);
   --background-body-color: hsl(221, 85%, 36%);
   --font-color: hsl(40, 100%, 51%);
-  @font-face {
-    font-family: 'ITC Machine';
-    src: url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.eot');
-    src: url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.eot?#iefix')
-        format('embedded-opentype'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.woff2')
-        format('woff2'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.woff')
-        format('woff'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.ttf')
-        format('truetype'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.svg#ITC Machine')
-        format('svg');
-  }
 }
 
 *,

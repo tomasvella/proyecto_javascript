@@ -19,3 +19,12 @@ const movieLoader = () => {
     $('#cards').html(movieView);
   });
 };
+
+$.getJSON('../db/movies.json', function (datos) {
+  movies = datos;
+
+  if (localStorage.getItem('movies') == null)
+    localStorage.setItem(keyLocalStorageMovies, JSON.stringify(movies));
+
+  movieLoader();
+});

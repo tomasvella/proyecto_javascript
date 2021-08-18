@@ -1,18 +1,9 @@
 //Variables globales para armar el listado de películas y poder capturarlas con los inputs.
 var movieDataBase = [];
-var movieTittle = $('#tittle');
-var movieYear = $('#year');
-var movieGenre = $('#genre');
-var movieProtagonist = $('#protagonist');
-var movieDirector = $('#director');
-var movieSynopsis = $('#synopsis');
+var movieTittle = $('#tittle')[0];
+var movieYear = $('#year')[0];
+var movieGenre = $('#genre')[0];
+var movieProtagonist = $('#protagonist')[0];
+var movieDirector = $('#director')[0];
+var movieSynopsis = $('#synopsis')[0];
 const keyLocalStorageMovies = 'movies';
-
-$.getJSON('../db/movies.json', function (datos) {
-  movies = datos;
-
-  if (localStorage.getItem('movies') == null)
-    localStorage.setItem(keyLocalStorageMovies, JSON.stringify(movies));
-
-  movieLoader();
-});
