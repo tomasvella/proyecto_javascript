@@ -1,3 +1,5 @@
+//Funciones para manipular el modal, esto permite que el cliente pueda tener una instancia más y poder arrepentirse de borrar
+//una película.
 const modalDeleteMovies = () => {
   $('#modal__lastMovie').fadeIn('slow');
 };
@@ -14,11 +16,15 @@ const cancelModalDeleteAllMovies = () => {
   $('#modal__allMovies').fadeOut('slow');
 };
 
+//Función que permite borrar la última posición del array y además actualizar el LocalStorage. Es llamada dentro de
+//deleteCreatedMovies.
 function popArrayAndUpdateLS() {
   movieDataBase.pop();
   localStorage.setItem('Movie', JSON.stringify(movieDataBase));
 }
 
+//Función para borrar la ultima pelicula creada, la funcion es capaz de detectar si la pelicula es borrada es la unica
+//cargada para eliminar una porcion de HTML que contiene "Peliculas ingresadas".
 const deleteCreatedMovies = () => {
   if (movieDataBase.length > 1) {
     popArrayAndUpdateLS();
@@ -53,6 +59,7 @@ const deleteCreatedMovies = () => {
   $('#modal__lastMovie').fadeOut('slow');
 };
 
+//Función que borra todas las películas, limpia el array y el LocalStorage
 const deleteAllMovies = () => {
   movieDataBase = [];
   localStorage.clear();

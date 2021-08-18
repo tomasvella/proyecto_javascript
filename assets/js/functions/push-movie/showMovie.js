@@ -1,5 +1,4 @@
 // Función que permite mostrar en pantalla la película creada.
-
 const showMovie = (movieDataBase) => {
   let viewMovie = `Película/s ingresada/s:
   <div class="movie__cards">`;
