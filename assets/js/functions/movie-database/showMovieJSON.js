@@ -1,5 +1,5 @@
 //Constante para poder crear una clave y utilizarla posteriormente dentro del LocalStorage.
-const keyLocalStorageMovies = 'movies';
+const keyLocalStorageMovies = 'moviesJSON';
 
 //Función que permite ubicar el archivo JSON y parsearlo a un array de objetivos. El mismo es recorrido y mostrado en pantalla
 //manipulando elementos de un HTML creado con un formato y estilado determinado.
@@ -29,7 +29,7 @@ const movieLoader = () => {
 $.getJSON('../db/movies.json', function (datos) {
   movies = datos;
 
-  if (localStorage.getItem('movies') == null)
+  if (localStorage.getItem('moviesJSON') == null)
     localStorage.setItem(keyLocalStorageMovies, JSON.stringify(movies));
 
   movieLoader();
