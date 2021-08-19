@@ -6,12 +6,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto - Blockbuster</title>
-        <link rel="stylesheet" href="../assets/css/contact.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/contact.css">
     </head>
 
     <body>
         <header>
-            <img src="./assets/img/blockbuster_logo.svg" alt="Blockbuster Logo" class="logo">
+            <img src="../img/blockbuster_logo.svg" alt="Blockbuster Logo" class="logo">
             <input type="checkbox" id="nav-toggle" class="nav-toggle">
             <nav>
                 <ul>
@@ -25,6 +29,29 @@
                 <span></span>
             </label>
         </header>
+        <div class="content">
+            <form action="" id="contact__form">
+                <label for="contact__name">Nombre:</label>
+                <input type="text" name="" id="form__name" class="form-control" required><br>
+                <label for="contact__surname">Empresa:</label>
+                <input type="text" name="" id="form__business" class="form-control" required><br>
+                <label for="contact__mail">Mail:</label>
+                <input type="email" name="" id="form__mail" class="form-control" required><br>
+                <label for="contact__phone">Telefono:</label>
+                <input type="number" name="" id="form__phone" class="form-control" required><br>
+                <input type="submit" value="Enviar" id="submit" class="btn">
+                <input type="reset" value="Limpiar" class="btn">
+            </form>
+        </div>
+        <div id="modal__form" class="modal__form">
+            <div class="modal__content">
+                <div class="modal__text">
+                    <p>Formulario enviado exitosamente. La página se refrescará.</p>
+                </div>
+            </div>
+        </div>
+        <script src="../js/functions/contact/formValidation.js"></script>
+        <script src="../js/functions/contact/formButton.js"></script>
     </body>
 
 </html>

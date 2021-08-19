@@ -1,23 +1,19 @@
-@import url(//db.onlinewebfonts.com/c/69bed3a8aa634e734859ad564c6fd73c?family=ITC+Machine);
+@font-face {
+  font-family: 'Itc Machine';
+  src: url('../fonts/ITC\ Machine/f5150c90308b4f19f093944346a2670a.woff2')
+      format('woff2'),
+    url('../fonts/ITC\ Machine/f5150c90308b4f19f093944346a2670a.ttf')
+      format('ttf'),
+    url('../fonts/ITC\ Machine/f5150c90308b4f19f093944346a2670a.eot')
+      format('eot');
+  font-weight: normal;
+  font-style: normal;
+}
 
 :root {
   --background-header-color: hsl(221, 89%, 22%);
   --background-body-color: hsl(221, 85%, 36%);
   --font-color: hsl(40, 100%, 51%);
-  @font-face {
-    font-family: 'ITC Machine';
-    src: url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.eot');
-    src: url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.eot?#iefix')
-        format('embedded-opentype'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.woff2')
-        format('woff2'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.woff')
-        format('woff'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.ttf')
-        format('truetype'),
-      url('//db.onlinewebfonts.com/t/69bed3a8aa634e734859ad564c6fd73c.svg#ITC Machine')
-        format('svg');
-  }
 }
 
 *,
@@ -148,6 +144,128 @@ nav a:hover {
   color: var(--font-color);
   font-size: 2em;
   text-align: center;
+  transform: translateY(5%);
+}
+
+.btn {
+  border: none;
+  margin: 20px;
+  padding: 20px 30px;
+  font-family: 'Itc Machine';
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  box-shadow: 0 0 25px var(--font-color);
+  background: var(--font-color);
+}
+
+.btn:hover {
+  box-shadow: 0 0 5px var(--font-color), 0 0 25px var(--font-color),
+    0 0 50px var(--font-color), 0 0 100px var(--font-color);
+}
+
+#delete__last,
+#delete__all {
+  display: none;
+}
+
+.modal__lastMovie,
+.modal__allMovies {
+  display: none;
+  position: fixed;
+  z-index: 998;
+  padding-top: 40vh;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--background-body-color);
+  opacity: 0.95;
+}
+
+.modal__content {
+  background-color: var(--font-color);
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+  font-size: 1.5em;
+}
+
+.modal__text__btn p {
+  text-align: center;
+}
+
+.modal__lastMovie__btn,
+.modal__allMovies__btn {
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px 30px;
+  font-family: 'Itc Machine';
+  color: var(--font-color);
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  box-shadow: 0 0 25px var(--background-body-color);
+  background: var(--background-body-color);
+  width: 100%;
+  justify-content: center;
+}
+
+.modal__lastMovie__btn:hover,
+.modal__allMovies__btn:hover {
+  box-shadow: 0 0 5px var(--background-body-color),
+    0 0 25px var(--background-body-color), 0 0 50px var(--background-body-color),
+    0 0 100px var(--background-body-color);
+}
+
+#movie {
+  margin-top: 2.5%;
+  width: 100%;
+}
+
+.form-control {
+  background-color: var(--background-header-color);
+  color: var(--font-color);
+}
+
+.movie__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movie__cards > * {
+  flex: 0 1 10em;
+}
+
+.card {
+  color: var(--font-color);
+  transform: translateY(10%);
+  background-color: transparent;
+  border-color: var(--font-color);
+  margin-bottom: 3.5%;
+  width: 32%;
+  padding: 1%;
+}
+
+.card_title {
+  font-size: 1em;
+}
+
+.card_data {
+  font-size: 0.5em;
 }
 
 @media screen and (min-width: 800px) {
@@ -215,5 +333,16 @@ nav a:hover {
     height: 100vh;
     font-size: 3em;
     transform: translateY(-30%);
+  }
+
+  #movie__form {
+    display: inline-block;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+
+  .form-control {
+    padding: 20px;
+    height: 50px;
   }
 }
