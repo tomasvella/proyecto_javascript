@@ -1,3 +1,0 @@
-modal ante borrado de peliculas
-que no se vean los botones de borrar hasta no tener peliculas cargadas
-peliculas creadas en una key localstorage
